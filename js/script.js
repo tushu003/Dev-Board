@@ -8,7 +8,7 @@ document.getElementById("current-date").innerText=d.toDateString();
 // blog part
 
 document.getElementById("qa").addEventListener("click", function(){
-    window.location.href="../questionAnswer.html"
+    window.location.href="questionAnswer.html"
 });
 
 
