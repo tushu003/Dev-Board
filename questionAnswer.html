@@ -6,6 +6,11 @@
     <title>Question</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .q-a{
+            border-bottom: 2px dashed rgb(239, 232, 232);
+        }
+    </style>
 
 </head>
 <body class="bg-[#F4F7FF] p-6">
@@ -25,28 +30,24 @@
     <main class="container mx-auto">
         <div>
             <h1 class="text-4xl font-bold text-black text-center my-6">Blogs</h1>
-            <div class="bg-[#FFFFFF] px-4 py-6 rounded-[8px] my-6">
-                <h3 class="text-2xl font-[700] text-black py-3">Question-1: What are the different ways to select an element in the DOM?</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem sapiente, ut esse porro harum asperiores, sed doloremque, dolore quo odit consequuntur dicta possimus voluptate error beatae tenetur debitis. Dignissimos, sunt!</p>
+            <div class="bg-[#FFFFFF] px-4 py-6 rounded-[8px] my-6 ">
+                <h3 class="text-2xl font-[700] text-black py-3 mb-4 q-a">Question-1: What are the different ways to select an element in the DOM?</h3>
+                <p>mainly we are using five methods.  1.getElementByTagName(This method selects elements based on their tag name.)  2.getElementById(This method selects a single element by its unique ID attribute.) 3.getElementByClassName(This method selects elements based on their class attribute.) 4.querySelector(This method selects the first element that matches a specified CSS selector. It returns only one element.) 5.querySelectorAll(Similar to querySelector, but it returns a NodeList containing all elements that match the specified CSS selector.)</p>
             </div>
             <div class="bg-[#FFFFFF] px-4 py-6 rounded-[8px] my-6">
-                <h3 class="text-2xl font-[700] text-black py-3">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h3>
+                <h3 class="text-2xl font-[700] text-black py-3 mb-4 q-a">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h3>
                 <p>innerHTML:(returns all text, including html tags, that is contained by an element.)    innerText:(Just access the visible text of the elements.)  textContent:(Gets the text content of all elements)</p>
             </div>
             <div class="bg-[#FFFFFF] px-4 py-6 rounded-[8px] my-6">
-                <h3 class="text-2xl font-[700] text-black py-3">Question-3: What is event delegation in the DOM?</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem sapiente, ut esse porro harum 
-            asperiores, sed doloremque, dolore quo odit consequuntur dicta possimus voluptate error beatae 
-            tenetur debitis. Dignissimos, sunt!</p>
+                <h3 class="text-2xl font-[700] text-black py-3 mb-4 q-a">Question-3: What is event delegation in the DOM?</h3>
+                <p>Event Delegation is a pattern based upon the concept of Event Bubbling. It is an event-handling pattern that allows to handle events at a higher level in the DOM tree other than the level where the event was first received.</p>
             </div>
             <div class="bg-[#FFFFFF] px-4 py-6 rounded-[8px] my-6">
-                <h3 class="text-2xl font-[700] text-black py-3">Question-4: What is event bubbling in the DOM?</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem sapiente, ut esse porro harum 
-            asperiores, sed doloremque, dolore quo odit consequuntur dicta possimus voluptate error beatae 
-            tenetur debitis. Dignissimos, sunt!</p>
+                <h3 class="text-2xl font-[700] text-black py-3 mb-4 q-a">Question-4: What is event bubbling in the DOM?</h3>
+                <p>Event Bubbling is a concept in the DOM (Document Object Model). It happens when an element receives an event, and that event bubbles up to its parent and ancestor elements in the DOM tree until it gets to the root element.its behavior makes it possible to handle an event in a parent element instead of the actual element that received the event.</p>
             </div>
             <div class="bg-[#FFFFFF] px-4 py-6 rounded-[8px] my-6">
-                <h3 class="text-2xl font-[700] text-black py-3">Question-5: How do you create, add, and remove elements using JavaScript?</h3>
+                <h3 class="text-2xl font-[700] text-black py-3 mb-4 q-a">Question-5: How do you create, add, and remove elements using JavaScript?</h3>
                 <p>create: document.createElement()-create a new HTML element.  add: append(),appendChild()-use add an element.  remove: remove(),removeChild()-using remove an element in DOM.</p>
             </div>
         </div>

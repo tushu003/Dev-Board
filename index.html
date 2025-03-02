@@ -6,6 +6,14 @@
     <title>Dev-Board</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+       .discover{
+        border-bottom: 2px dashed rgb(239, 232, 232);
+       }
+       .activity-history{
+        border-bottom: 2px dashed rgb(239, 232, 232);
+       }
+    </style>
 
 </head>
 <body id="body" class="bg-[#F4F7FF] p-6">
@@ -21,7 +29,7 @@
                         <img class="theme-img" class="w-[32px] h-[32px]" src="assets/checkbox.png" alt="">
                         <p id="increase" class="text-[32px] font-[700] text-[#1E1E1E]">23</p>
                     </div>
-                    <div>
+                    <div class="bg-[#F4F7FF] rounded-full p-4">
                         <img id="theme-img" class="w-[40px]" src="assets/theme-btn.png" alt="">
                     </div>
                 </div>
@@ -31,10 +39,10 @@
     <main class="flex container mx-auto gap-4">
         <section class="">
             <div class="flex">
-                <div class="container mx-auto bg-[#FFFFFF] rounded-xl p-6 mt-5">
-                   <div>
-                   <div class="flex">
-             <div class="flex gap-4">
+                <div class="container mx-auto bg-[#FFFFFF] rounded-xl mt-5">
+                   <div class="">
+                   <div class="flex discover pb-6">
+             <div class="flex gap-4 p-6 ">
                 <div class="flex items-center gap-2 bg-[#F4F7FF] w-[300px] p-6 rounded-[12px]">
                     <div class="bg-[#FFFFFF] rounded-full p-4">
                         <img class="w-[28px] " src="assets/checkbox.png" alt="">
@@ -44,7 +52,7 @@
                         <h1 class=" text-[32px] font-[700] text-[#00303C]" id="decrease">06</h1>
                     </div>
                 </div>
-                <div id="qa" class="flex items-center gap-2 w-[524px] bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] p-[32px] rounded-[12px]">
+                <div id="qa" class="flex items-center gap-2  w-[524px] bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] p-[32px] rounded-[12px]">
                     <div class="">
                         <img class="w-[56px] " src="assets/board.png" alt="">
                     </div>
@@ -63,7 +71,7 @@
                 </div>
             </div>
                    </div>
-                   <div class="my-[64px] grid grid-cols-3 gap-6">
+                   <div class="my-[64px] grid grid-cols-3 px-6 gap-6">
                     <div class="complete-btn w-[370px] bg-[#F4F7FF] rounded-[16px] p-6">
                         <p class="bg-[#FFFFFF] rounded-[8px] text-center p-1 w-[114px]">ShopEase</p>
                         <h4 class="text-[24px] text-[#00303C] font-[500] my-4">Fix Mobile Button Issue </h4>
@@ -133,13 +141,15 @@
             </section>
             <section class="h-[918px]">
             <div>
-                <div class="bg-[#FFFFFF] w-[300px] h-[918px] rounded-xl m-5 p-6 pt-6">
+                <div class="bg-[#FFFFFF] w-[300px] h-[918px] rounded-xl m-5 pt-6">
+                    <div class="activity-history pb-6">
                     <div class="flex items-center justify-center gap-3">
                         <img class="w-[24px]" src="assets/activity.png" alt="">
                         <p class="text-xl text-[#00303C] font-[500]">Activity Log</p>
                     </div>
-                    <button id="clear-button" class="bg-[#3752FD] items-center text-white rounded-[8px] mt-6 ml-16 p-4">Clear History</button>
-                    <p id="log"></p>
+                    <button id="clear-button" class="bg-[#3752FD] items-center text-white rounded-[8px] mt-6 ml-[84px] p-4">Clear History</button>
+                    </div>
+                    <p id="log" class="mx-6"></p>
                 </div>
             </div>
         </div> 
