@@ -8,7 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
-<body id="display" class="bg-[#F4F7FF] p-6">
+<body id="body" class="bg-[#F4F7FF] p-6">
     <header class="container mx-auto">
         <nav>
             <div class="flex justify-between bg-[#FFFFFF] p-6 rounded-[16px]">
@@ -22,7 +22,7 @@
                         <p id="increase" class="text-[32px] font-[700] text-[#1E1E1E]">23</p>
                     </div>
                     <div>
-                        <img class="w-[40px]" src="assets/theme-btn.png" alt="">
+                        <img id="theme-img" class="w-[40px]" src="assets/theme-btn.png" alt="">
                     </div>
                 </div>
             </div>    
@@ -104,7 +104,7 @@
                             <button class="bg-[#3752FD] text-white rounded-[8px] px-6">Completed</button>
                         </div>
                     </div>
-                    <div class="w-[370px] bg-[#F4F7FF] rounded-[16px] p-6">
+                    <div class="complete-btn w-[370px] bg-[#F4F7FF] rounded-[16px] p-6">
                         <p class="bg-[#FFFFFF] rounded-[8px] text-center p-1 w-[114px]">Google LLC</p>
                         <h4 class="text-[24px] text-[#00303C] font-[500] my-4">Integrate OpenAI API </h4> </h4>
                         <p class="bg-[#FFFFFF] p-3">Debug using Chrome DevTools, check for overlapping...</p>
@@ -114,7 +114,7 @@
                             <button class="bg-[#3752FD] text-white rounded-[8px] px-6">Completed</button>
                         </div>
                     </div>
-                    <div class="w-[3>0px] bg-[#F4F7FF] rounded-[16px] p-6">
+                    <div class="complete-btn w-[3>0px] bg-[#F4F7FF] rounded-[16px] p-6">
                         <p class="bg-[#FFFFFF] rounded-[8px] text-center p-1 w-[114px]">Glassdoar</p>
                         <h4 class="text-[24px] text-[#00303C] font-[500] my-4">Improve Job searching </h4>
                         <p class="bg-[#FFFFFF] p-3">Debug using Chrome DevTools, check for overlapping...</p>
@@ -138,7 +138,7 @@
                         <img class="w-[24px]" src="assets/activity.png" alt="">
                         <p class="text-xl text-[#00303C] font-[500]">Activity Log</p>
                     </div>
-                    <button class="bg-[#3752FD] items-center text-white rounded-[8px] mt-6 ml-16 p-4">Clear History</button>
+                    <button id="clear-button" class="bg-[#3752FD] items-center text-white rounded-[8px] mt-6 ml-16 p-4">Clear History</button>
                     <p id="log"></p>
                 </div>
             </div>
@@ -147,5 +147,6 @@
         </section>
     </main>
     <script src="js/script.js"></script>
+    <script src="js/themeColor.js"></script>
 </body>
 </html>
